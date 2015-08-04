@@ -493,7 +493,6 @@ void OpenSprinkler::apply_all_station_bits() {
       //Appearntly there is an error with the 'MAX_EXT_BOARDS-bid's way of operate
       //So the iteration is made in order
       bitvalue = station_bits[bid];
-      //bitvalue = station_bits[MAX_EXT_BOARDS-bid];
     }
     
     // Check that we're switching discretes within the range defined
@@ -502,8 +501,7 @@ void OpenSprinkler::apply_all_station_bits() {
       for(s = 0; s < 8; s++) 
       {
         //the same error reported occurs if '7-s' is made
-        digitalWrite(station_pins[(bid*8)+s], (bitvalue & ((byte)1<<(s))) ? HIGH : LOW );         
-        //digitalWrite(station_pins[(bid*8)+s], (bitvalue & ((byte)1<<(7-s))) ? HIGH : LOW );         
+        digitalWrite(station_pins[(bid*8)+s], (bitvalue & ((byte)1<<(s))) ? HIGH : LOW ); 
       }
     }
   }
