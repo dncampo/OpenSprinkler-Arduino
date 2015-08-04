@@ -1,0 +1,13 @@
+OpenSprinkler v207 fork
+
+Tested with Arduino IDE 1.0.4
+
+
+How to get running this project:
+-----------------------------
+
+1) Copy all folder under 'OpenSprinkler_Arduino_V_2_0_7/libraries/' to the folder 'arduino-1.0.4/libraries/' of Arduino IDE.
+The libreries are: DS1307RTC/  ICMPPing/  MemoryFree/  SdFat/  Time/  TimeAlarms/
+2) Run the 'arduino' binary file (1.0.4).
+3) In the IDE, open the file 'interval_program_V_2_0_7.ino' from 'OpenSprinkler_Arduino_V_2_0_7/interval_program_V_2_0_7/'
+
